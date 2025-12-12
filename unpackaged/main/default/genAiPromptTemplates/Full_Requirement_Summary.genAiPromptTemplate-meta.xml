@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionIdentifier>qDwQWRy2bn0VCoPuEZy8B2mgPphERxyaRUsRIyCxKUU=_3</activeVersionIdentifier>
+    <developerName>Full_Requirement_Summary</developerName>
+    <masterLabel>Full Requirement Summary</masterLabel>
+    <templateVersions>
+        <content>{!$Input:Requirement_Summary}
+{!$Input:File_Summary}
+</content>
+        <inputs>
+            <apiName>Requirement_Summary</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Requirement Summary</masterLabel>
+            <referenceName>Input:Requirement_Summary</referenceName>
+            <required>true</required>
+        </inputs>
+        <inputs>
+            <apiName>File_Summary</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>File Summary</masterLabel>
+            <referenceName>Input:File_Summary</referenceName>
+            <required>false</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>qDwQWRy2bn0VCoPuEZy8B2mgPphERxyaRUsRIyCxKUU=_1</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Funding Award Requirement Prompt
+Prompt: You are a grant making program manager for a non profit organization. Your task is to generate a concise summary of the Funding Award Requirement using the information provided from the Flow inputs.
+When I ask you to summarize the Funding Award Requirement, you must strictly follow my instructions below:
+Please analyze the following related data:
+
+Focus on
+Funding Award Requirement Record: {!$Input:Requirement_Summary}
+Submitted Files: {!$Input:File_Summary}
+Instructions:
+Summarize the submitted files and records into a concise description of the submitted requirement. Include high level details from the uploaded files and key data fields.
+The summary should provide details related to the outcomes of the grant.
+Identify and clearly state any red flags, missing information, or in-progress elements.
+Keep the tone professional and objective.
+Maintain a professional, objective and neutral tone.
+Produce no more than 700 characters and 3 bullet points. It can be less than that if necessary. Include any key metrics if possible.
+Use clear, direct language in the active voice without bias.
+Avoid filler words, redundant phrasing, and any evaluative or emotional language.
+Use bullet points for readability.
+
+</content>
+        <inputs>
+            <apiName>Requirement_Summary</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Requirement Summary</masterLabel>
+            <referenceName>Input:Requirement_Summary</referenceName>
+            <required>true</required>
+        </inputs>
+        <inputs>
+            <apiName>File_Summary</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>File Summary</masterLabel>
+            <referenceName>Input:File_Summary</referenceName>
+            <required>false</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>qDwQWRy2bn0VCoPuEZy8B2mgPphERxyaRUsRIyCxKUU=_2</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Funding Award Requirement Prompt
+Prompt: You are a grant making program manager for a non profit organization. Your task is to generate a concise summary of the Funding Award Requirement using the information provided from the Flow inputs.
+When I ask you to summarize the Funding Award Requirement, you must strictly follow my instructions below:
+Please analyze the following related data:
+
+Focus on
+Funding Award Requirement Record: {!$Input:Requirement_Summary}
+Submitted Files: {!$Input:File_Summary}
+Instructions:
+Summarize the submitted files and records into a concise description of the submitted requirement. Include high level details from the uploaded files and key data fields. Use line breaks to separate summaries from each requirement and file summaries.
+
+The summary should provide details related to the outcomes of submitted data/files.
+Identify and clearly state any red flags, missing information, or in-progress elements.
+Keep the tone professional and objective.
+Do not outline next steps and actions to be taken, this should only capture summarization of inputs on records/files.
+Maintain a professional, objective and neutral tone.
+Produce no more than 700 characters and 3 bullet points. It can be less than that if necessary. Include any key metrics if possible.
+Use clear, direct language in the active voice without bias.
+Avoid filler words, redundant phrasing, and any evaluative or emotional language.
+Use bullet points for readability.
+
+</content>
+        <inputs>
+            <apiName>Requirement_Summary</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Requirement Summary</masterLabel>
+            <referenceName>Input:Requirement_Summary</referenceName>
+            <required>true</required>
+        </inputs>
+        <inputs>
+            <apiName>File_Summary</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>File Summary</masterLabel>
+            <referenceName>Input:File_Summary</referenceName>
+            <required>false</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>qDwQWRy2bn0VCoPuEZy8B2mgPphERxyaRUsRIyCxKUU=_3</versionIdentifier>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

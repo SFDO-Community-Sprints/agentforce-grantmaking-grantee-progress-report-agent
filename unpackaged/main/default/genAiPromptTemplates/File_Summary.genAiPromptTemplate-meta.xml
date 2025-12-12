@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <developerName>File_Summary</developerName>
+    <masterLabel>File Summary</masterLabel>
+    <relatedEntity>ContentDocument</relatedEntity>
+    <templateVersions>
+        <content>can share the content or details of the file
+</content>
+        <inputs>
+            <apiName>objectToSummarize</apiName>
+            <definition>SOBJECT://ContentDocument</definition>
+            <referenceName>Input:ContentDocument</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Draft</status>
+        <versionIdentifier>qDwQWRy2bn0VCoPuEZy8B2mgPphERxyaRUsRIyCxKUU=_1</versionIdentifier>
+    </templateVersions>
+    <type>einstein_gpt__recordSummary</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

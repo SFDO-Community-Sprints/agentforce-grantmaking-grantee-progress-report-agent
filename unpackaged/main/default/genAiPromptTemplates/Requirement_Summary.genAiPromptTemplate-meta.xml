@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionIdentifier>qDwQWRy2bn0VCoPuEZy8B2mgPphERxyaRUsRIyCxKUU=_2</activeVersionIdentifier>
+    <developerName>Requirement_Summary</developerName>
+    <masterLabel>Requirement Summary</masterLabel>
+    <relatedEntity>FundingAwardRequirement</relatedEntity>
+    <templateVersions>
+        <content>{!$RecordSnapshot:FundingAwardRequirement.Snapshot}
+{!$RelatedList:FundingAwardRequirement.FundingAwardRqmtSections.Records}
+</content>
+        <inputs>
+            <apiName>objectToSummarize</apiName>
+            <definition>SOBJECT://FundingAwardRequirement</definition>
+            <referenceName>Input:FundingAwardRequirement</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>invocable://getRelatedList</definition>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>parentRecordId</parameterName>
+                <valueExpression>{!$Input:FundingAwardRequirement.Id}</valueExpression>
+            </parameters>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>relatedListName</parameterName>
+                <valueExpression>FundingAwardRqmtSections</valueExpression>
+            </parameters>
+            <referenceName>RelatedList:FundingAwardRequirement.FundingAwardRqmtSections.Records</referenceName>
+        </templateDataProviders>
+        <templateDataProviders>
+            <definition>invocable://getDataForGrounding</definition>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>recordId</parameterName>
+                <valueExpression>{!$Input:FundingAwardRequirement.Id}</valueExpression>
+            </parameters>
+            <referenceName>RecordSnapshot:FundingAwardRequirement</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>qDwQWRy2bn0VCoPuEZy8B2mgPphERxyaRUsRIyCxKUU=_1</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>You are a grant-making program manager for a nonprofit organization. Your task is to generate a concise summary of all provided records in the inputs listed below. 
+When I ask you to summarize these records, you must strictly follow the instructions below.
+
+Please analyze the following related data:
+{!$RecordSnapshot:FundingAwardRequirement.Snapshot}
+{!$RelatedList:FundingAwardRequirement.FundingAwardRqmtSections.Records}
+
+Summarize all provided records into a general, concise, coherent description that reflects the overall status of records and listed data points.
+
+Maintain a professional, objective, and neutral tone.
+Produce no more than 800 characters and 4 bullet points (fewer allowed if appropriate).
+Use clear, direct language in the active voice.
+Do not outline next steps and actions to be taken, this should only capture summarization of records.
+Avoid filler words, redundant phrasing, and any evaluative or emotional language.
+Present bullet points for readability.
+
+</content>
+        <inputs>
+            <apiName>objectToSummarize</apiName>
+            <definition>SOBJECT://FundingAwardRequirement</definition>
+            <referenceName>Input:FundingAwardRequirement</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>invocable://getRelatedList</definition>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>parentRecordId</parameterName>
+                <valueExpression>{!$Input:FundingAwardRequirement.Id}</valueExpression>
+            </parameters>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>relatedListName</parameterName>
+                <valueExpression>FundingAwardRqmtSections</valueExpression>
+            </parameters>
+            <referenceName>RelatedList:FundingAwardRequirement.FundingAwardRqmtSections.Records</referenceName>
+        </templateDataProviders>
+        <templateDataProviders>
+            <definition>invocable://getDataForGrounding</definition>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>recordId</parameterName>
+                <valueExpression>{!$Input:FundingAwardRequirement.Id}</valueExpression>
+            </parameters>
+            <referenceName>RecordSnapshot:FundingAwardRequirement</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>qDwQWRy2bn0VCoPuEZy8B2mgPphERxyaRUsRIyCxKUU=_2</versionIdentifier>
+    </templateVersions>
+    <type>einstein_gpt__recordSummary</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>
