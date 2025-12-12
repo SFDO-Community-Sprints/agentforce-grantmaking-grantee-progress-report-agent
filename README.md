@@ -56,7 +56,7 @@ Opportunity for high credit usage depending on # of files, document size/content
 
 * Funding Award Summary Generation
 
-Funding Award Comparison (summary to goals)
+* Funding Award Comparison (summary to goals)
 
 
 General Notes:
