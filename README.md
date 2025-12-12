@@ -8,7 +8,7 @@ Lucid-Based Flow Documentation:
 https://lucid.app/lucidchart/0d67d704-3da7-4383-a710-39676959653e/edit?invitationId=inv_fd9467d2-b6a3-4be9-86f2-63fc15cbf73e&page=0_0
 
 
-Implementation Considerations:
+Implementation Considerations: 
 
 * Deploy the flow & prompt launcher(s) as a button in order to control flex credit consumption
 * Expose flow & prompt launcher to a smaller subset of users when testing to evaluate patterns of credit consumption
