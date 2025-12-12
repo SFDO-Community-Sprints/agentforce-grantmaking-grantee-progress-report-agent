@@ -78,3 +78,4 @@ Opportunity for high credit usage depending on # of files, document size/content
 General Notes:
 
 * File summarization will only process PDF Files
+* Requirement summarization fails if no files attached - Will add null check to allow for this
