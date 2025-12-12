@@ -38,12 +38,33 @@ Object Usage:
 * Funding Award Requirement Section (Optional): Used to capture multiple steps/submission parts of Funding Award Requirements, submitted data/files will be accounted for on summary of Funding Award Requirement
 
 
-Custom Field Usage:
+Custom Fields:
 
 * Funding Award | Award Summary: Used to summarize all summaries generated on child Funding Award Requirements
 * Funding Award | Intended Outcomes: Used to capture Awardees intended Goals/Outcomes (to be manually populated), will be used in comparison of submitted requriements and intended goals
 * Funding Award | Summary Vs Intended Outcomes Comparison: Used to track progess against intended outcomes
 * Funding Award Requirement | Requirement Summary: Used to summarize triggering Funding Award Requirement, associated Funding Award Requirement Sections, and all associated Files
+
+
+Flows:
+
+* Funding Award Summary Comparison - Button
+* Funding Award Summary - Button
+* Funding Award Requirement Summary - Button
+
+
+Quick Actions
+* Funding Award | Summarize Requirements
+* Funding Award | Compare Summary/Outcomes
+* Funding Award Requirement | Summarize Requirement
+
+
+Prompts
+* File Summary - Summarizes Files associated to Funding Award Requirement or Funding Award Requirement Section
+* Funding Award Summaries - Summarizes all Requirement Summaries associated to Funding Award
+* Requirement Summary - Summarizes each individual Funding Award Requirement or Funding Award Requirement Section
+* Full Requirement Summary - Summarizes all summaries generated from Requirement Summary Prompt
+* Funding Award Summary Comparison - Compares Award Summary and Intended Outcomes
 
 
 Agentforce Credit Usage:
