@@ -42,7 +42,7 @@ Custom Field Usage:
 
 * Funding Award | Award Summary: Used to summarize all summaries generated on child Funding Award Requirements
 * Funding Award | Intended Outcomes: Used to capture Awardees intended Goals/Outcomes (to be manually populated), will be used in comparison of submitted requriements and intended goals
-* Funding Award Requirement | Summary: Used to summarize triggering Funding Award Requirement, associated Funding Award Requirement Sections, and all associated Files
+* Funding Award Requirement | Requirement Summary: Used to summarize triggering Funding Award Requirement, associated Funding Award Requirement Sections, and all associated Files
 
 
 Agentforce Credit Usage:
