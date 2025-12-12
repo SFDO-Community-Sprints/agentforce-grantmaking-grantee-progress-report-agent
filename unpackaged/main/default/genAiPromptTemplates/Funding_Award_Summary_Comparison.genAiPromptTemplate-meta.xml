@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
-    <activeVersionIdentifier>qDwQWRy2bn0VCoPuEZy8B2mgPphERxyaRUsRIyCxKUU=_1</activeVersionIdentifier>
+    <activeVersionIdentifier>qDwQWRy2bn0VCoPuEZy8B2mgPphERxyaRUsRIyCxKUU=_3</activeVersionIdentifier>
     <description>Used to compare compiled Funding Award Summary with Intended Outcomes (from Funding Award)</description>
     <developerName>Funding_Award_Summary_Comparison</developerName>
     <masterLabel>Funding Award Summary Comparison</masterLabel>
@@ -39,6 +39,80 @@ Do not suggest next steps or action items.
         <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
         <status>Published</status>
         <versionIdentifier>qDwQWRy2bn0VCoPuEZy8B2mgPphERxyaRUsRIyCxKUU=_1</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>You are a grant-making program manager for a nonprofit organization. Your task is to compare {!$Input:Intended_Outcomes} (which represent how the awardee plans to use funds) with {!$Input:Funding_Award_Summary} (which represents what they have provided on how they have actually utilized funds).
+
+When I ask you to compare these two values, you must strictly follow the instructions below.
+
+Compare these two fields and provide a coherent, concise description that reflects:
+1. What was outlined as an intended goal that has been accomplished.
+2. What was outlined as an intended goal that has NOT been accomplished
+3. What was outlined as accomplished that is not part of the intended goal.
+
+Maintain a professional, objective, and neutral tone.
+Use line breaks between summarization statements.
+Produce no more than 800 characters and 4 bullet points (fewer allowed if appropriate).
+Use clear, direct language in the active voice.
+Avoid filler words, redundant phrasing, and any evaluative or emotional language.
+Present bullet points for readability.
+Do not suggest next steps or action items. 
+
+</content>
+        <inputs>
+            <apiName>Funding_Award_Summary</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Funding Award Summary</masterLabel>
+            <referenceName>Input:Funding_Award_Summary</referenceName>
+            <required>true</required>
+        </inputs>
+        <inputs>
+            <apiName>Intended_Outcomes</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Intended Outcomes</masterLabel>
+            <referenceName>Input:Intended_Outcomes</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>qDwQWRy2bn0VCoPuEZy8B2mgPphERxyaRUsRIyCxKUU=_2</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>You are a grant-making program manager for a nonprofit organization. Your task is to compare {!$Input:Intended_Outcomes} (which represent how the awardee plans to use funds) with {!$Input:Funding_Award_Summary} (which represents what they have provided on how they have actually utilized funds).
+
+When I ask you to compare these two values, you must strictly follow the instructions below.
+
+Compare these two fields and provide a coherent, concise description that reflects:
+1. What was outlined as an intended goal that has been accomplished.
+2. What was outlined as an intended goal that has NOT been accomplished
+3. What was outlined as accomplished that is not part of the intended goal.
+
+Maintain a professional, objective, and neutral tone.
+Use line breaks between summarization statements.
+Produce no more than 800 characters and 4 bullet points (fewer allowed if appropriate).
+Use clear, direct language in the active voice.
+Avoid filler words, redundant phrasing, and any evaluative or emotional language.
+Present bullet points for readability.
+Do not suggest next steps or action items. 
+
+</content>
+        <inputs>
+            <apiName>Funding_Award_Summary</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Funding Award Summary</masterLabel>
+            <referenceName>Input:Funding_Award_Summary</referenceName>
+            <required>true</required>
+        </inputs>
+        <inputs>
+            <apiName>Intended_Outcomes</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Intended Outcomes</masterLabel>
+            <referenceName>Input:Intended_Outcomes</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>qDwQWRy2bn0VCoPuEZy8B2mgPphERxyaRUsRIyCxKUU=_3</versionIdentifier>
     </templateVersions>
     <type>einstein_gpt__flex</type>
     <visibility>Global</visibility>
