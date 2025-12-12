@@ -29,6 +29,8 @@ Project Parking Lot:
 * Enhancement - Provide automated way for Requirement summaries to be retained in a Note upon a re-summarization of the Requirement
 * Enhancement - Agentic actions for creating/updating Outcome-related objects when the prompt analyzes the Requirement doc(s) 
 
+_______________________________________
+
 Object Usage:
 
 Funding Award: Used to capture award of grant, will serve as summary base to capture what was submitted on requirements as well as manual input of goals/outcomes awardee is working towards (used in comparison process)
