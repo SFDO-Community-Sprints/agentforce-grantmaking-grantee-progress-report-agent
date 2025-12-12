@@ -34,21 +34,30 @@ _______________________________________
 Object Usage:
 
 Funding Award: Used to capture award of grant, will serve as summary base to capture what was submitted on requirements as well as manual input of goals/outcomes awardee is working towards (used in comparison process)
+
 Funding Award Requirement: Used to capture submission of reporting/updates by grantee to document progress on intended goals
+
 Funding Award Requirement Section (Optional): Used to capture multiple steps/submission parts of Funding Award Requirements, submitted data/files will be accounted for on summary of Funding Award Requirement
+
 
 Custom Field Usage:
 
 Funding Award | Award Summary: Used to summarize all summaries generated on child Funding Award Requirements
+
 Funding Award | Intended Outcomes: Used to capture Awardees intended Goals/Outcomes (to be manually populated), will be used in comparison of submitted requriements and intended goals
+
 Funding Award Requirement | Summary: Used to summarize triggering Funding Award Requirement, associated Funding Award Requirement Sections, and all associated Files
+
 
 Agentforce Credit Usage:
 
 Requirement Summary Generation: 
 Opportunity for high credit usage depending on # of files, document size/content, and requirement sections
+
 Funding Award Summary Generation
+
 Funding Award Comparison (summary to goals)
+
 
 General Notes:
 
