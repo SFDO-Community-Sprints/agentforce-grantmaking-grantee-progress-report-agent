@@ -1,4 +1,26 @@
-Wiki
+Lucid-Based Flow Documentation: 
+https://lucid.app/lucidchart/0d67d704-3da7-4383-a710-39676959653e/edit?invitationId=inv_fd9467d2-b6a3-4be9-86f2-63fc15cbf73e&page=0_0
 
 
-dfff
+Implementation Considerations:
+
+* Deploy the flow & prompt launcher(s) as a button in order to control flex credit consumption
+* Expose flow & prompt launcher to a smaller subset of users when testing to evaluate patterns of credit consumption
+* If you receive requirement documents in other languages, add the specific language the prompt should use for the summary output
+* If you receive PII as part of your requirements, be advised that the document may not mask all PII prior to sending to the LLM
+
+
+
+Known Issues:
+
+* Summaries will only review PDF formatted documents in v1
+
+
+
+Project Parking Lot:
+
+* Enhancement - Comparison of Intended Outcomes vs Funding Award Summarization
+* Enhancement - Provide automated way for Requirement summaries to be retained in a Note upon a re-summarization of the Requirement
+* Enhancement - Agentic actions for creating/updating Outcome-related objects when the prompt analyzes the Requirement doc(s) 
+
+
