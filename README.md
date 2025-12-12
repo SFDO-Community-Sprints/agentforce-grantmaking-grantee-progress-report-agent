@@ -1,7 +1,7 @@
 # agentforce-grantmaking-grantee-progress-report-agent
 OVERVIEW
 
-Grantee submits progress reports (Funding Award Requirements) which are laddered up through the summaries on the Requirement/Requirement Section Level (including Files associated), through Funding Award, and eventually through program summary to state effectiveness of awards. 
+Grantee submits progress reports (Funding Award Requirements) which can be summarized on the Requirement (including Requirement Sections and all associated Files), the Funding Award, and eventually through program summary to state effectiveness of awards. 
 
 Lucid-Based Flow Documentation: 
 
